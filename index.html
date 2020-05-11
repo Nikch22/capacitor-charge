@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1″ />
+    <title>CONDENSADOR</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!---Fuente Calistoga-->
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <!---Fuente Roboto Slab-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="contenedor">
+        <div class="inputOrganiza">
+            <label for="fuente">Fuente</label>
+            <label for="v" class="simbolo">V</label>
+            <br>
+            <input id="fuente" name="fuente" type="text" required>
+        </div>
+
+        <div class="inputOrganiza">
+            <label for="resistencia">Resistencia</label>
+            <label for="omega" class="simbolo">&Omega;</label>
+            <br>
+            <input id="resistencia" name="resistencia" type="text" required>
+        </div>
+
+        <div class="inputOrganiza">
+            <label for="capacitor">Capacitor</label>
+            <label for="micro" class="simbolo"> &micro;F</label>
+            <br>
+            <input id="capacitor" name="capacitor" type="text" required>
+        </div>
+
+        <div class="inputOrganiza">
+            <label for="tiempo">Tiempo</label>
+            <label for="seg" class="simbolo"> seg</label>
+            <br>
+            <input id="tiempo" name="tiempo" type="text" required>
+        </div>
+
+        <div id="buttons">
+            <button class="buttonOrganiza" id="btnCalcular" type="button" onclick="realizarCalculos()">Calcular</button>
+            <button class="buttonOrganiza" id="btnLimpiar" type="button" onclick="limpiaCampos()">Limpiar</button>
+        </div>
+    </div>
+
+    <div id="presentacion">
+        <div>
+            <p>- Cuando se cierra el interruptor la corriente inicial ser&aacute; de <span id="lblInfo1"></span> A</p>             
+        </div>
+
+        <div>
+            <p>- La carga m&aacute;xima ser&aacute; de <span id="lblInfo2"></span> &micro;C</p>            
+        </div>
+
+        <div>
+            <p>Para <span id="lblInfo3"></span> segundos: </p>        
+        </div>
+
+        <div>
+            <p>- La corriente ser&aacute; de <span id="lblInfo4"></span> &micro;A</p>        
+        </div>
+
+        <div>
+            <p>- La carga ser&aacute; de <span id="lblInfo5"></span> C</p>        
+        </div>
+    </div>
+  
+</body>
+</html>
