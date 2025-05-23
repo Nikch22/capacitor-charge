@@ -1,3 +1,15 @@
+:root {
+    --primary-bg-color: #f8efba;
+    --primary-text-color: #000;
+    --container-bg-color: #e74c3c;
+    --container-text-color: #fff;
+    --shadow-color: #000;
+    --button-bg-color: #f3a683;
+    --input-bg-color: #f7f1e3;
+    /* Add a variable for the SVG background for light mode if we decide to keep …    --button-bg-color: #505050;
+    --input-bg-color: #404040;
+    --svg-bg-image-color: #303030; /* Example for dark mode, adjust if needed */
+}
 
 #contenedor{
     border: 1px solid #000;
